@@ -1,0 +1,28 @@
+
+h5 {
+  padding-top: 5%;
+}
+
+blockquote {
+  border-left: 5px solid #ffc107;
+}
+
+.pd {
+  padding: 3% 0;
+}
+
+/* Form & Button Styles */
+
+.controls{
+  padding: 2%;
+  margin: 0 auto;
+}
+
+/* Container/Target Styles */
+
+.container .mix{
+  max-width: 100px;
+  height: 100px;
+  margin: 5%;
+  display: none;
+}

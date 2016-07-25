@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Catalogo de peliculas</title>
+
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+		<!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body class="grey darken-3">
+
+		<nav>
+    <div class="nav-wrapper amber">
+      <a href="#" class="brand-logo center">CINE MELÓN</a>
+    </div>
+  </nav>
+	
+	<section class="grey darken-4">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="container">
+					<div class="col s4">
+						<h5 class="white-text">Selecciona tu película: </h5>
+					</div>
+					<div class="col s8">	
+						<form class="controls" id="Filters">		
+							<fieldset>
+						    <select class="browser-default">
+						      <option value="">Todos</option>
+						      <option value=".accion">Acción</option>
+						      <option value=".crimen">Crimen</option>
+						      <option value=".familiar">Familiar</option>
+						      <option value=".terror">Terror</option>
+						    </select>
+						  </fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div id="Container" class="container">
+		  <div class="row">
+		  	<div class="col s12">
+		  		<div class="mix accion ">
+		  			<a href="movies.html#bvs"><img src="http://bajalogratis.com/wp-content/uploads/2016/06/front-11.jpg"></a>
+		  		</div>
+		  		<div class="mix crimen ">
+		  			<a href="movies.html#perros"><img src="http://bajalogratis.com/wp-content/uploads/2016/07/Tarde-de-perros.jpg"></a>
+		  		</div>
+		  		<div class="mix familiar ">
+		  			<a href="movies.html#increibles"><img src="http://bajalogratis.com/wp-content/uploads/2016/04/Los-incre%C3%ADbles.jpg"></a>
+		  		</div>
+		  		<div class="mix accion familiar">
+		  			<a href="movies.html#jones"><img src="http://bajalogratis.com/wp-content/uploads/2016/06/Indiana-Jones.jpg"></a>
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="row">
+		  	<div class="col s12">
+		  		<div class="mix crimen ">
+		  			<a href="movies.html#milagros"><img src="http://bajalogratis.com/wp-content/uploads/2016/06/Milagros-Inesperados.jpg"></a>
+		  		</div>
+		  		<div class="mix familiar">
+		  			<a href="movies.html#shrek"><img src="http://bajalogratis.com/wp-content/uploads/2016/06/Shrek.jpg"></a>
+		  		</div>
+		  		<div class="mix terror ">
+		  			<a href="movies.html#rosemary"><img src="http://bajalogratis.com/wp-content/uploads/2016/07/El-Beb%C3%A9-de-Rosemary.jpg"></a>
+		  		</div>
+		  		<div class="mix terror">
+		  			<a href="movies.html#mama"><img src="http://bajalogratis.com/wp-content/uploads/2016/05/Mama.jpg"></a>
+		  		</div>
+		  	</div>
+		  </div>
+		 </div>
+	</section>
+
+		<!--  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			$( document ).ready(function() {
+  			$('#Container').mixItUp();
+			});
+		</script>
+
+	</body>
+</html>
